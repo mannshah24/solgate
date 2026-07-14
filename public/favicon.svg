@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" fill="none">
+  <defs>
+    <linearGradient id="logo-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="logo-medium" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+    <linearGradient id="logo-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="logo-slab-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+    <linearGradient id="logo-slab-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+  </defs>
+  <polygon points="34,86 86,50 84,120" fill="url(#logo-light)" stroke="#0A0A0A" stroke-width="3.5" stroke-linejoin="round" />
+  <polygon points="92,112 166,90 86,50" fill="url(#logo-medium)" stroke="#0A0A0A" stroke-width="3.5" stroke-linejoin="round" />
+  <polygon points="86,50 92,112 84,120" fill="url(#logo-dark)" stroke="#0A0A0A" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="34,110 166,175 34,185" fill="url(#logo-slab-light)" stroke="#0A0A0A" stroke-width="3.5" stroke-linejoin="round" />
+  <polygon points="34,185 166,175 166,250" fill="url(#logo-slab-dark)" stroke="#0A0A0A" stroke-width="3.5" stroke-linejoin="round" />
+  <polygon points="166,214 114,250 116,180" fill="url(#logo-light)" stroke="#0A0A0A" stroke-width="3.5" stroke-linejoin="round" />
+  <polygon points="108,188 34,210 114,250" fill="url(#logo-medium)" stroke="#0A0A0A" stroke-width="3.5" stroke-linejoin="round" />
+  <polygon points="114,250 108,188 116,180" fill="url(#logo-dark)" stroke="#0A0A0A" stroke-width="2.5" stroke-linejoin="round" />
+</svg>
