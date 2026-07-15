@@ -28,7 +28,7 @@ export const CopyButton: React.FC<CopyButtonProps> = ({
 
   return (
     <div
-      className={`flex items-center justify-between gap-4 bg-black/60 border border-white/10 rounded-full px-6 py-3 font-code text-sm md:text-base group hover:border-accentPurple/40 transition-colors duration-300 ${className}`}
+      className={`flex items-center justify-between gap-2 bg-black/60 border border-white/10 rounded-full px-4 py-2.5 sm:px-6 sm:py-3 font-code text-xs sm:text-sm md:text-base group hover:border-accentPurple/40 transition-colors duration-300 ${className}`}
     >
       <div className="flex items-center gap-2 overflow-x-auto no-scrollbar whitespace-nowrap select-all text-primaryText">
         {cliMode && text.startsWith('$ ') ? (

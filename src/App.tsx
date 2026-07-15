@@ -85,7 +85,7 @@ export default function App() {
           <div className="flex items-center gap-4">
 
             <a 
-              href="https://github.com/mannshah24/solgate" 
+              href="https://github.com/mannshah24/solgate-cli.git" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#9945FF] text-[#0A0A0A] text-sm font-semibold hover:bg-[#8033E6] hover:shadow-[0_0_20px_rgba(153,69,255,0.4)] active:scale-95 transition-all duration-200"
@@ -98,7 +98,7 @@ export default function App() {
       </header>
 
       {/* 2. Hero Section */}
-      <section className="relative min-h-[90vh] flex flex-col justify-center items-center px-6 overflow-hidden pt-12 pb-24">
+      <section className="relative min-h-[85vh] flex flex-col justify-center items-center px-4 sm:px-6 overflow-hidden pt-16 pb-20 md:pt-24 md:pb-32">
         {/* Glow effect background */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="w-[1000px] h-[600px] rounded-full bg-radial-gradient opacity-80 filter blur-[120px]" 
@@ -123,8 +123,8 @@ export default function App() {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="font-headline text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.05]"
+            transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
+            className="font-headline text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1] md:leading-[1.05]"
           >
             Solana Development on Windows, <span className="text-gradient-purple-green">Simplified.</span>
           </motion.h1>
@@ -133,8 +133,8 @@ export default function App() {
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-lg md:text-xl text-mutedText max-w-2xl mb-10 leading-relaxed font-body"
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-mutedText max-w-2xl mb-8 leading-relaxed font-body"
           >
             The transparent CLI proxy that brings native Linux compilation speed to your Windows workflow, bypassing WSL filesystem boundaries.
           </motion.p>
@@ -163,7 +163,7 @@ export default function App() {
               Get Started
             </a>
             <a 
-              href="https://github.com/mannshah24/solgate"
+              href="https://github.com/mannshah24/solgate-cli.git"
               target="_blank" 
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full border border-white/12 text-[#E2E8F0] font-semibold text-base hover:bg-white/5 hover:border-white/20 active:scale-98 transition-all duration-200"
@@ -187,7 +187,7 @@ export default function App() {
       </section>
 
       {/* 3. The Problem Section */}
-      <section className="py-24 px-6 relative border-t border-white/5 bg-black/20">
+      <section className="py-16 md:py-24 px-4 sm:px-6 relative border-t border-white/5 bg-black/20 overflow-hidden">
         <div className="absolute top-0 right-1/4 w-[500px] h-[300px] rounded-full bg-[#3B82F6]/5 filter blur-[100px] pointer-events-none" />
         
         <div className="max-w-7xl mx-auto">
@@ -196,15 +196,15 @@ export default function App() {
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
             variants={fadeUpVariants}
-            className="text-center mb-16"
+            className="text-center mb-12 md:mb-16"
           >
-            <span className="text-sm font-bold tracking-wider text-[#9945FF] uppercase font-code">
+            <span className="text-xs sm:text-sm font-bold tracking-wider text-[#9945FF] uppercase font-code">
               The Problem
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-white mt-3 mb-4">
+            <h2 className="font-headline text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mt-3 mb-4">
               Why Windows Solana Dev is Painful
             </h2>
-            <p className="text-mutedText max-w-2xl mx-auto">
+            <p className="text-xs sm:text-sm md:text-base text-mutedText max-w-2xl mx-auto">
               Developing on Solana with Windows has historically meant choosing between terrible filesystem performance or configuration nightmare.
             </p>
           </motion.div>
@@ -214,10 +214,10 @@ export default function App() {
               <div className="w-12 h-12 rounded-2xl bg-[#9945FF]/10 border border-[#9945FF]/20 flex items-center justify-center text-[#9945FF] mb-6">
                 <Gauge size={24} />
               </div>
-              <h3 className="font-headline text-2xl font-bold text-white mb-4">
+              <h3 className="font-headline text-xl sm:text-2xl font-bold text-white mb-3">
                 WSL File-System Bottleneck
               </h3>
-              <p className="text-mutedText leading-relaxed text-base">
+              <p className="text-xs sm:text-sm md:text-base text-mutedText leading-relaxed">
                 Accessing files across the WSL boundary is notoriously slow. Anchor builds and Rust compiles crawl because every file operation crosses the virtual filesystem bridge — often <span className="text-[#9945FF] font-semibold">10–20x slower</span> than native compilation.
               </p>
             </GlassCard>
@@ -226,10 +226,10 @@ export default function App() {
               <div className="w-12 h-12 rounded-2xl bg-[#14F195]/10 border border-[#14F195]/20 flex items-center justify-center text-[#14F195] mb-6">
                 <Layers size={24} />
               </div>
-              <h3 className="font-headline text-2xl font-bold text-white mb-4">
+              <h3 className="font-headline text-xl sm:text-2xl font-bold text-white mb-3">
                 Environment Complexity
               </h3>
-              <p className="text-mutedText leading-relaxed text-base">
+              <p className="text-xs sm:text-sm md:text-base text-mutedText leading-relaxed">
                 Maintaining parallel Solana toolchains — one inside WSL, one outside — means duplicated configs, conflicting versions, and debugging that drains hours. <span className="text-[#14F195] font-semibold">solgate</span> collapses this into a single, transparent proxy.
               </p>
             </GlassCard>
@@ -238,7 +238,7 @@ export default function App() {
       </section>
 
       {/* 4. Terminal Action Section */}
-      <section className="py-24 px-6 relative">
+      <section className="py-16 md:py-24 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute bottom-0 left-1/4 w-[600px] h-[300px] rounded-full bg-[#14F195]/5 filter blur-[120px] pointer-events-none" />
 
         <div className="max-w-4xl mx-auto">
@@ -247,15 +247,15 @@ export default function App() {
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
             variants={fadeUpVariants}
-            className="text-center mb-12"
+            className="text-center mb-10 md:mb-12"
           >
-            <span className="text-sm font-bold tracking-wider text-[#14F195] uppercase font-code">
+            <span className="text-xs sm:text-sm font-bold tracking-wider text-[#14F195] uppercase font-code">
               In Action
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-white mt-3 mb-4">
+            <h2 className="font-headline text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mt-3 mb-4">
               Your Terminal, Transformed
             </h2>
-            <p className="text-mutedText max-w-2xl mx-auto">
+            <p className="text-xs sm:text-sm md:text-base text-mutedText max-w-2xl mx-auto">
               Execute commands normally. SolGate intercepts them under the hood and compiles inside Linux Docker, utilizing native write speeds.
             </p>
           </motion.div>
@@ -273,47 +273,47 @@ export default function App() {
               
               {/* Tab Row (Left) */}
               <div className="flex items-end h-full pl-2">
-                <div className="flex items-center gap-2 px-4 py-2 bg-[#030303] border-t-2 border-accentPurple rounded-t-md text-xs font-semibold text-white h-[90%] mt-[10%]">
-                  <TerminalIcon size={12} className="text-accentPurple" />
+                <div className="flex items-center gap-1.5 px-2.5 sm:px-4 py-1.5 sm:py-2 bg-[#030303] border-t-2 border-accentPurple rounded-t-md text-[10px] sm:text-xs font-semibold text-white h-[90%] mt-[10%]">
+                  <TerminalIcon size={11} className="text-accentPurple" />
                   <span>PowerShell</span>
-                  <span className="text-[10px] text-mutedText hover:text-white ml-2 cursor-pointer font-sans">×</span>
+                  <span className="text-[9px] sm:text-[10px] text-mutedText hover:text-white ml-1.5 cursor-pointer font-sans">×</span>
                 </div>
                 {/* Add Tab and Options */}
-                <div className="flex items-center justify-center w-7 h-7 hover:bg-white/5 rounded text-mutedText hover:text-white cursor-pointer ml-1 mb-1 text-xs">
+                <div className="hidden sm:flex items-center justify-center w-7 h-7 hover:bg-white/5 rounded text-mutedText hover:text-white cursor-pointer ml-1 mb-1 text-xs">
                   <span>+</span>
                 </div>
-                <div className="flex items-center justify-center w-7 h-7 hover:bg-white/5 rounded text-mutedText hover:text-white cursor-pointer mb-1 text-[9px]">
+                <div className="hidden sm:flex items-center justify-center w-7 h-7 hover:bg-white/5 rounded text-mutedText hover:text-white cursor-pointer mb-1 text-[9px]">
                   <span>▼</span>
                 </div>
               </div>
 
               {/* Actions / Replay (Center/Right-ish) */}
-              <div className="flex items-center gap-2 h-full pr-1">
+              <div className="flex items-center gap-1 h-full pr-1">
                 {/* Custom Replay Action */}
                 <button 
                   onClick={triggerReplay}
-                  className="flex items-center gap-1.5 px-2.5 py-1 text-xs text-mutedText hover:text-white hover:bg-white/5 rounded transition-all duration-150 mr-2"
+                  className="flex items-center gap-1 px-1.5 py-0.5 sm:px-2.5 sm:py-1 text-[10px] sm:text-xs text-mutedText hover:text-white hover:bg-white/5 rounded transition-all duration-150 mr-1 sm:mr-2"
                   title="Restart terminal typing animation"
                 >
-                  <RefreshCw size={11} className={isReplaying ? 'animate-spin' : ''} />
+                  <RefreshCw size={10} className={isReplaying ? 'animate-spin' : ''} />
                   <span>Replay</span>
                 </button>
 
                 {/* Windows Window Controls */}
                 {/* Minimize */}
-                <div className="flex items-center justify-center w-11 h-full hover:bg-white/5 text-mutedText hover:text-white cursor-pointer transition-colors duration-150">
-                  <svg width="10" height="1" viewBox="0 0 10 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="flex items-center justify-center w-8 sm:w-11 h-full hover:bg-white/5 text-mutedText hover:text-white cursor-pointer transition-colors duration-150">
+                  <svg width="8" height="1" viewBox="0 0 10 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="10" y2="0.5" stroke="currentColor" />
                   </svg>
                 </div>
                 {/* Maximize */}
-                <div className="flex items-center justify-center w-11 h-full hover:bg-white/5 text-mutedText hover:text-white cursor-pointer transition-colors duration-150">
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="flex items-center justify-center w-8 sm:w-11 h-full hover:bg-white/5 text-mutedText hover:text-white cursor-pointer transition-colors duration-150">
+                  <svg width="8" height="8" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.5" width="8" height="8" stroke="currentColor" fill="none" />
                   </svg>
                 </div>
                 {/* Close (Red Hover) */}
-                <div className="flex items-center justify-center w-11 h-full hover:bg-[#E81123] text-mutedText hover:text-white cursor-pointer transition-colors duration-150">
+                <div className="flex items-center justify-center w-8 sm:w-11 h-full hover:bg-[#E81123] text-mutedText hover:text-white cursor-pointer transition-colors duration-150">
                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1L7 7M7 1L1 7" stroke="currentColor" strokeWidth="1" />
                   </svg>
@@ -322,7 +322,7 @@ export default function App() {
             </div>
 
             {/* Terminal Content */}
-            <div className="p-6 md:p-8 font-code text-sm md:text-base leading-relaxed text-[#D1D5DB] min-h-[340px] overflow-x-auto">
+            <div className="p-4 sm:p-6 md:p-8 font-code text-xs sm:text-sm md:text-base leading-relaxed text-[#D1D5DB] min-h-[280px] sm:min-h-[340px] overflow-x-auto w-full">
               {/* Command Line */}
               <div className="flex items-center flex-wrap gap-x-2">
                 <span className="text-accentBlue select-none">PS C:\dev&gt;</span>
@@ -415,7 +415,7 @@ export default function App() {
 
       {/* 5. Simple Setup Section */}
       <div id="setup" className="scroll-mt-24" />
-      <section className="py-24 px-6 border-t border-white/5 bg-black/20 relative">
+      <section className="py-16 md:py-24 px-4 sm:px-6 border-t border-white/5 bg-black/20 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full bg-accentBlue/5 filter blur-[130px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto">
@@ -424,15 +424,15 @@ export default function App() {
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
             variants={fadeUpVariants}
-            className="text-center mb-20"
+            className="text-center mb-12 md:mb-16"
           >
-            <span className="text-sm font-bold tracking-wider text-[#14F195] uppercase font-code">
+            <span className="text-xs sm:text-sm font-bold tracking-wider text-[#14F195] uppercase font-code">
               Simple Setup
             </span>
-            <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-white mt-3 mb-4">
+            <h2 className="font-headline text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mt-3 mb-4">
               Up and Running in Minutes
             </h2>
-            <p className="text-mutedText max-w-2xl mx-auto">
+            <p className="text-xs sm:text-sm md:text-base text-mutedText max-w-2xl mx-auto">
               Three steps. That’s it. No WSL configuration required. Ensure Docker Desktop is open, and let SolGate do the rest.
             </p>
           </motion.div>
@@ -490,7 +490,7 @@ export default function App() {
       </section>
 
       {/* 6. Footer */}
-      <footer className="border-t border-white/5 bg-[#080808] py-16 px-6">
+      <footer className="border-t border-white/5 bg-[#080808] py-12 md:py-16 px-4 sm:px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex flex-col items-center md:items-start gap-3">
             <div className="flex items-center gap-3">
@@ -507,7 +507,7 @@ export default function App() {
           <div className="flex items-center gap-4">
 
             <a 
-              href="https://github.com/mannshah24/solgate" 
+              href="https://github.com/mannshah24/solgate-cli.git" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full bg-white/5 border border-white/8 text-[#E2E8F0] text-xs font-semibold hover:bg-white/10 hover:border-white/15 transition-all duration-200"

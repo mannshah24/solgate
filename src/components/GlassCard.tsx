@@ -21,7 +21,7 @@ export const GlassCard: React.FC<GlassCardProps> = ({
       viewport={{ once: true, margin: '-100px' }}
       transition={{ duration: 0.6, delay, ease: [0.16, 1, 0.3, 1] }}
       whileHover={hoverEffect ? { y: -4, borderColor: 'rgba(153, 69, 255, 0.25)', boxShadow: '0 10px 30px -10px rgba(153, 69, 255, 0.15)' } : undefined}
-      className={`glass-panel rounded-[14px] p-8 transition-all duration-300 relative overflow-hidden group ${className}`}
+      className={`glass-panel rounded-[14px] p-6 sm:p-8 transition-all duration-300 relative overflow-hidden group ${className}`}
     >
       {/* Decorative inner glow hover effect */}
       {hoverEffect && (

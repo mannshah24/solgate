@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mannshah24/solgate/blob/main/LICENSE">
+  <a href="https://github.com/mannshah24/solgate-cli/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-purple.svg" alt="License" />
   </a>
   <a href="https://www.npmjs.com/package/@mannshah24/solgate">
     <img src="https://img.shields.io/npm/v/@mannshah24/solgate.svg?color=green" alt="npm version" />
   </a>
-  <a href="https://github.com/mannshah24/solgate">
-    <img src="https://img.shields.io/github/stars/mannshah24/solgate.svg?color=blue" alt="GitHub stars" />
+  <a href="https://github.com/mannshah24/solgate-cli.git">
+    <img src="https://img.shields.io/github/stars/mannshah24/solgate-cli.svg?color=blue" alt="GitHub stars" />
   </a>
 </p>
 
