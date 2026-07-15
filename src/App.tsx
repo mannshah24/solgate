@@ -72,6 +72,26 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-[#E2E8F0] font-body selection:bg-accentPurple/30 selection:text-white">
       
+      {/* GitHub Star Banner */}
+      <div className="w-full bg-[#0D0D0D] border-b border-white/5 py-2.5 px-4 text-center text-xs sm:text-sm font-body relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-accentPurple/15 via-transparent to-accentGreen/15 pointer-events-none" />
+        <div className="relative flex items-center justify-center gap-2 flex-wrap">
+          <span>💡</span>
+          <span className="text-primaryText/90 font-medium animate-pulse">
+            If this helped you, please star the{' '}
+            <a 
+              href="https://github.com/mannshah24/solgate-cli.git" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-accentGreen hover:text-accentGreen/80 underline font-semibold transition-colors duration-200"
+            >
+              GitHub repository
+            </a>!
+          </span>
+          <span>⭐🚀</span>
+        </div>
+      </div>
+
       {/* 1. Navbar (Sticky) */}
       <header className="sticky top-0 z-50 w-full bg-[#0A0A0A]/85 backdrop-blur-md border-b border-white/5 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
