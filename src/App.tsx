@@ -126,7 +126,7 @@ export default function App() {
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
             className="font-headline text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1] md:leading-[1.05]"
           >
-            Solana Development on Windows, <span className="text-gradient-purple-green">Simplified.</span>
+            Solana Development on <span className="text-gradient-purple-green">Windows</span>, Simplified.
           </motion.h1>
 
           {/* Sub-headline */}
